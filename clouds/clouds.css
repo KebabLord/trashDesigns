@@ -1,0 +1,161 @@
+/* github.com/Kebablord 
+   I took the images from fauux by his permission, code is mine */
+
+@-webkit-keyframes spawn {
+  from {
+    margin-top: 1000px;
+    visibility: visible;
+  }
+  to {
+    margin-top: -80px;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-top: -80px;
+    visibility: visible;
+  }
+  50% {
+    margin-top: -100px;
+    visibility: visible;
+  }
+  100% {
+    margin-top: -80px;
+    visibility: visible;
+  }
+}
+
+.sign_table {
+  visibility: hidden;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  width: 285px;
+  height: 190px;
+  margin-top: -80px;
+  z-index: 3;
+  -webkit-animation: spawn 5s 3s, wave 4s infinite linear 8s;
+}
+
+
+/* TABLE */
+table,
+td,
+tr {
+  border: none;
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+.linked:hover {
+  background: white;
+  opacity: .16;
+}
+
+td a {
+  display: block;
+  line-height: 68px;
+}
+
+.sign_table {
+  background: url("imejus/float.png") no-repeat;
+  width: 404px;
+  height: 257px;
+}
+
+.sign_table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign_rope {
+  line-height: 55px;
+}
+
+.sign_table td {
+  font-size: 0;
+}
+
+
+/* CLOUD ANIMATION */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes curtain {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+.perde {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 1337;
+  -webkit-animation: curtain 3.5s forwards 1s;
+}
+
+.capitalise {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  width: 2048px;
+  height: 2048px;
+  margin-top: -1024px;
+  margin-left: -1024px;
+}
+
+.cloud1 {
+  z-index: -1;
+  -webkit-animation: spin 20s infinite linear;
+}
+
+.cloud2 {
+  z-index: -2;
+  -webkit-animation: spin 30s infinite linear;
+}
+
+.cloud3 {
+  z-index: -3;
+  -webkit-animation: spin 40s infinite linear;
+}
+
+.cloud4 {
+  z-index: -4;
+  -webkit-animation: spin 50s infinite linear;
+}
+
+.cloud5 {
+  z-index: -5;
+  -webkit-animation: spin 60s infinite linear;
+}
+
+.cloud6 {
+  z-index: -6;
+  -webkit-animation: spin 70s infinite linear;
+}
+
+.cloud7 {
+  z-index: -7;
+  -webkit-animation: spin 80s infinite linear;
+}
+
